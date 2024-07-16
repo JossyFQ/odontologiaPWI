@@ -1,0 +1,27 @@
+[
+    {
+        "id": 444555666,
+        "pDiagnostico": "Plan de tratamiento dental para Pedro Martínez.",
+        "diagnostico": "Diagnóstico dental para Pedro Martínez."
+    },
+    {
+        "id": 111222333,
+        "pDiagnostico": "Plan de tratamiento dental para María García.",
+        "diagnostico": "Diagnóstico dental para María García."
+    },
+    {
+        "id": 101112131,
+        "pDiagnostico": "Plan de tratamiento dental para Manuel López.",
+        "diagnostico": "Diagnóstico dental para Manuel López."
+    },
+    {
+        "id": 777888999,
+        "pDiagnostico": "Plan de tratamiento dental para Sofía Rodríguez.",
+        "diagnostico": "Diagnóstico dental para Sofía Rodríguez."
+    },
+    {
+        "id": 141516171,
+        "pDiagnostico": "Plan de tratamiento dental para Ana Ramírez.",
+        "diagnostico": "Diagnóstico dental para Ana Ramírez."
+    }
+]

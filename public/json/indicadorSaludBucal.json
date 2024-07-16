@@ -1,0 +1,62 @@
+[
+    {
+        "id": 111222333,
+        "placa": 1,
+        "calculo": 2,
+        "gingivitis": 0,
+        "periodontitis": "LEVE",
+        "oclusion": "ANGLE I",
+        "fluorosis": "LEVE",
+        "c": 3,
+        "p": 0,
+        "o": 2
+    },
+    {
+        "id": 444555666,
+        "placa": 2,
+        "calculo": 1,
+        "gingivitis": 1,
+        "periodontitis": "MODERADA",
+        "oclusion": "ANGLE II",
+        "fluorosis": "MODERADA",
+        "c": 2,
+        "p": 1,
+        "o": 3
+    },
+    {
+        "id": 777888999,
+        "placa": 0,
+        "calculo": 0,
+        "gingivitis": 0,
+        "periodontitis": "SEVERA",
+        "oclusion": "ANGLE III",
+        "fluorosis": "SEVERA",
+        "c": 5,
+        "p": 2,
+        "o": 1
+    },
+    {
+        "id": 101112131,
+        "placa": 1,
+        "calculo": 1,
+        "gingivitis": 0,
+        "periodontitis": "LEVE",
+        "oclusion": "ANGLE I",
+        "fluorosis": "LEVE",
+        "c": 1,
+        "p": 0,
+        "o": 4
+    },
+    {
+        "id": 141516171,
+        "placa": 0,
+        "calculo": 0,
+        "gingivitis": 2,
+        "periodontitis": "MODERADA",
+        "oclusion": "ANGLE II",
+        "fluorosis": "MODERADA",
+        "c": 3,
+        "p": 0,
+        "o": 2
+    }
+]

@@ -1,0 +1,62 @@
+body {
+    background-image: url('../img/img5.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: gray;    
+}
+
+form {
+    max-width: 60%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(241, 0, 0, 0.1);
+    width: 100%;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+#gender,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+/*input[type="date"]{
+    color: gray;
+}*/
+
+button[type="submit"] {
+    width: 100%;
+    background-color: blueviolet;
+    color: wheat;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: blueviolet;
+}
+

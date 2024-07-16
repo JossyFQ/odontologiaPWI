@@ -1,0 +1,106 @@
+body {
+    background-image: url('../img/img4.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 5%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: black;
+}
+h4, p {
+    color: black;
+}
+
+label,p {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    /*flex: 1;*/
+}
+input[type="number"]{
+    width: 30%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 15px;
+    align-items: flex-end; /* Alinea los elementos al extremo derecho */
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 15px;
+}
+input.id{
+    width: 40%;
+    margin-left: 5px;
+}
+/* Estilo para el elemento select */
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.checkbox,
+input.Periodontal,
+input.movilidad,
+input.Fluor,
+input.Oclusion,
+input.Placa
+{
+    margin-right: 5px; /* Espacio entre el checkbox y el texto */
+    width: 20px; /* Ancho del checkbox personalizado */
+    height: 20px; /* Altura del checkbox personalizado */
+    border-radius: 3px; /* Borde redondeado */
+    border: 1px solid blueviolet; /* Borde del checkbox */
+    background-color: #ff0b0b; /* Fondo del checkbox */
+    vertical-align: middle;
+}
+.checkbox:checked + label::before {
+    background-color: rgb(255, 99, 8); /* Cambiar color de fondo cuando está marcado */
+}
+
+button[type="submit"] {
+    display: block;
+    width: 45%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: blueviolet;
+    color: wheat;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right;
+}
+
+button[type="submit"]:hover {
+    background-color: blueviolet;
+}

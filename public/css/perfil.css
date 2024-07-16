@@ -1,0 +1,78 @@
+body {
+    background-image: url('../img/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: wheat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(24, 23, 23, 0.575);
+    width: 350px;
+    margin-right: 100px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: blueviolet;
+    color: wheat;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+button[type="button"] {
+    width: 50%;
+    background-color: white;
+    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    float: right;
+}
+a[type="button"]{
+    background-color: white;
+    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    float: right;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "id": 444555666,
+        "nombre": "Pedro Martínez",
+        "edad": 25,
+        "genero": "masculino",
+        "motivoConsulta": "Dolor dental agudo",
+        "tipoDeProblema": "Caries en molar izquierdo",
+        "antecedentePersonales": "Sensibilidad dental previa",
+        "antecedenteMedico": "Extracción de muela del juicio hace 2 años",
+        "presionArterial": 130,
+        "frecuenciaCardiaca": 75,
+        "temperaturaCorporal": 36.8,
+        "frecuenciaRespiratoria": 18
+    },
+    {
+        "id": 111222333,
+        "nombre": "María García",
+        "edad": 35,
+        "genero": "femenino",
+        "motivoConsulta": "Revisión y limpieza dental anual",
+        "tipoDeProblema": "Gingivitis leve",
+        "antecedentePersonales": "Uso regular de hilo dental y enjuague bucal",
+        "antecedenteMedico": "Ninguno relevante",
+        "presionArterial": 125,
+        "frecuenciaCardiaca": 68,
+        "temperaturaCorporal": 37.0,
+        "frecuenciaRespiratoria": 16
+    },
+    {
+        "id": 101112131,
+        "nombre": "Manuel López",
+        "edad": 42,
+        "genero": "masculino",
+        "motivoConsulta": "Dolor en las encías al cepillar",
+        "tipoDeProblema": "Gingivitis crónica",
+        "antecedentePersonales": "Historial de encías inflamadas",
+        "antecedenteMedico": "Ninguno relevante",
+        "presionArterial": 135,
+        "frecuenciaCardiaca": 72,
+        "temperaturaCorporal": 36.5,
+        "frecuenciaRespiratoria": 17
+    },
+    {
+        "id": 777888999,
+        "nombre": "Sofía Rodríguez",
+        "edad": 18,
+        "genero": "femenino",
+        "motivoConsulta": "Dolor en la mandíbula al masticar",
+        "tipoDeProblema": "Bruxismo nocturno",
+        "antecedentePersonales": "Uso de férula nocturna",
+        "antecedenteMedico": "Ninguno relevante",
+        "presionArterial": 110,
+        "frecuenciaCardiaca": 80,
+        "temperaturaCorporal": 37.3,
+        "frecuenciaRespiratoria": 19
+    },
+    {
+        "id": 141516171,
+        "nombre": "Ana Ramírez",
+        "edad": 50,
+        "genero": "femenino",
+        "motivoConsulta": "Revisión de dentadura postiza",
+        "tipoDeProblema": "Ajuste de dentadura superior",
+        "antecedentePersonales": "Uso de dentadura postiza desde hace 10 años",
+        "antecedenteMedico": "Ninguno relevante",
+        "presionArterial": 145,
+        "frecuenciaCardiaca": 70,
+        "temperaturaCorporal": 36.9,
+        "frecuenciaRespiratoria": 15
+    }
+]

@@ -1,0 +1,86 @@
+body {
+    background-image: url('../img/img4.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 5%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: black;
+}
+h4, p {
+    color: black;
+}
+
+label,p {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}input[type="number"]{
+    width: 50px;
+    margin-left: 5px;
+}
+input.id, 
+input.pArterial, 
+input.fCardiaca, 
+input.tCorporal,
+input.fRespiratoria{
+    width: 40%;
+    margin-left: 5px;
+}
+/* Estilo para el elemento select */
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 45%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: blueviolet;
+    color: wheat;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right; /* Para que este elemento se alinee a la derecha */
+}
+
+button[type="submit"]:hover {
+    background-color: blueviolet;
+}

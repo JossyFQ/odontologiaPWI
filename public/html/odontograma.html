@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/ICO.png"> <!--logo en la pestaña-->
+    <title>Odontograma</title>
+    <link rel="stylesheet" href="../css/odontograma.css">
+    <script src="../js/odontograma.js"></script>
+    <!--circulo JS-->
+    <script>
+        var colores = ["blue", "white", "red"]; // Array con los colores en la secuencia: azul claro, blanco, rojo
+        var indiceColor = 0; // Índice para rastrear el color actual
+        function marcarDiente(boya) {
+          // Cambiar el color de fondo de la boya al hacer clic
+          boya.style.backgroundColor = colores[indiceColor]; // Establece el color actual
+          // Incrementar el índice para pasar al siguiente color
+          indiceColor++;
+          // Si el índice supera el número de colores disponibles, vuelve al inicio del array
+          if (indiceColor >= colores.length) {
+            indiceColor = 0;
+          }
+        }
+    </script>
+    <style>
+        /* Estilos para la barra de navegación */
+        .navbar2 {
+            background-color: rgb(92, 75, 245);
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+        .navbar2 .barra2 {
+            float: left;
+            display: block;
+            text-align: center;
+            background-color: rgb(92, 75, 245);
+            padding: 10px 90px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid #000;
+        }
+        /* Estilo para resaltar el enlace activo */
+        .navbar2 .barra2:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+    <!--circulo CSS-->
+    <style>
+        /*la circunferencia grande*/
+        .circle {
+          width: 50px;
+          height: 50px;
+      /*  background-color: #f00; /* Color de la circunferencia */
+          border-radius: 50%;
+          position: relative;
+          overflow: hidden;
+          transform: rotate(45deg);
+          border: 2px solid #000;/* Color del borde negro */
+          margin: 1px; /* Añadido para espacio entre círculos */
+          display: inline-block; /* Para colocar los círculos en línea */
+        }
+        /*la circunferencia pequeña*/
+        .circle-smile {
+          width: 25px;
+          height: 25px;
+          background-color: white;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: 2px solid #000;/* Color del borde negro */
+        }
+        /*el triangulo*/
+        .slice {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          clip-path: polygon(50% 50%, 0 0, 100% 0);
+          transform-origin: center;
+        }
+        .slice:nth-child(1) {
+          transform: rotate(45deg);
+          top: calc(50% -1px);
+        }
+        .slice:nth-child(2) {
+          transform: rotate(135deg);
+          top: calc(50% -1px);
+        }
+        .slice:nth-child(3) {
+          transform: rotate(-45deg);
+          top: calc(50% -1px);
+        }
+        .slice:nth-child(4) {
+          transform: rotate(-135deg);
+          top: calc(50% -1px);
+        }
+        /*las lineas*/
+        .line {
+          position: absolute;
+          width: 120%; /* Ajustar la longitud para que alcance el borde del círculo grande */
+          height: 2px;
+          background-color: #000; /* Color negro */
+          transform-origin: center;
+          border: 2px solid #000;/* Color del borde negro */
+        }
+        .line:nth-child(1) {
+          transform: rotate(45deg);
+          top: calc(50% - 1px); /* Ajustar la posición vertical */
+          left: -10%; /* Mover la línea un poco hacia afuera para que alcance el borde del círculo */
+        }
+        .line:nth-child(2) {
+          transform: rotate(135deg);
+          top: calc(50% - 1px); /* Ajustar la posición vertical */
+          left: -10%; /* Mover la línea un poco hacia afuera para que alcance el borde del círculo */
+        }
+        .line:nth-child(3) {
+          transform: rotate(-45deg);
+          top: calc(50% - 1px); /* Ajustar la posición vertical */
+          left: -10%; /* Mover la línea un poco hacia afuera para que alcance el borde del círculo */
+        }
+        .line:nth-child(4) {
+          transform: rotate(-135deg);
+          top: calc(50% - 1px); /* Ajustar la posición vertical */
+          left: -10%; /* Mover la línea un poco hacia afuera para que alcance el borde del círculo */
+        }
+        /*estilos para las filas y columnas*/
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        /*.column {
+          flex: 1 0 6.25%; /* 1 de 16 columnas*//* 
+        }*/
+        
+    </style>
+</head>
+<body>
+  <iframe src="../navbar.html" width="100%" height="auto" frameborder="0"></iframe>
+    <!--div class="navbar2">
+        <a href="./datosPaciente.html" class="barra2">Datos del paciente</a>
+        <a href="./odontograma.html" class="barra2">Odontograma</a>
+        <a href="./indicadorSaludBucal.html" class="barra2">Indicadores de salud bucal</a>
+        <a href="./diagnostico.html" class="barra2">Diagnostico</a-->
+    </div>
+    <form id="datosPaciente" action=" ">
+        <h1>Registro Clínico</h1>
+        <h2>Odontograma</h2>
+        <label for="id">Cedula ID del paciente:
+        <input type="number" class="id" id="id" name="id" required placeholder="Identificacion del paciente"></label><br><br>
+
+        <div class="odontograma">
+            <!-- Cuadrícula de dientes -->
+            <div class="row">
+                <div class="column">
+                  <div class="circle">
+                    <div class="slice" onclick="marcarDiente(this)"><div class="line"></div></div>
+                    <div class="slice" onclick="marcarDiente(this)"><div class="line"></div></div>
+                    <div class="slice" onclick="marcarDiente(this)"><div class="line"></div></div>
+                    <div class="slice" onclick="marcarDiente(this)"><div class="line"></div></div>
+                    <div class="circle-smile" onclick="marcarDiente(this)"></div>
+                  </div>
+                </div>
+                <div class="diente" id="diente1">18 <span>3i</span></div>
+            </div>
+            <div class="diente" id="diente2">17 <span>2i</span></div>
+            <div class="diente" id="diente3">16 <span>1i</span></div>
+            <div class="diente" id="diente4">15 <span>C</span></div>
+            <div class="diente" id="diente5">14 <span>1d</span></div>
+            <div class="diente" id="diente6">13 <span>2d</span></div>
+            <div class="diente" id="diente8">12 <span>3d</span></div>
+            <div class="diente" id="diente9">11 <span>4d</span></div>
+            <div class="diente" id="diente10">21 <span>4i</span></div>
+            <div class="diente" id="diente11">22 <span>3i</span></div>
+            <div class="diente" id="diente12">23 <span>2i</span></div>
+            <div class="diente" id="diente13">24 <span>1i</span></div>
+            <div class="diente" id="diente14">25 <span>C</span></div>
+            <div class="diente" id="diente15">26 <span>1d</span></div>
+            <div class="diente" id="diente16">27 <span>2d</span></div>
+            <div class="diente" id="diente17">28 <span>3d</span></div>
+            <div class="diente" id="diente18">48 <span>3i</span></div>
+            <div class="diente" id="diente19">47 <span>2i</span></div>
+            <div class="diente" id="diente20">46 <span>1i</span></div>
+            <div class="diente" id="diente21">45 <span>C</span></div>
+            <div class="diente" id="diente22">44 <span>1d</span></div>
+            <div class="diente" id="diente23">43 <span>2d</span></div>
+            <div class="diente" id="diente24">42 <span>3d</span></div>
+            <div class="diente" id="diente25">41 <span>4d</span></div>
+            <div class="diente" id="diente26">31 <span>4i</span></div>
+            <div class="diente" id="diente27">32 <span>3i</span></div>
+            <div class="diente" id="diente28">33 <span>2i</span></div>
+            <div class="diente" id="diente29">34 <span>1i</span></div>
+            <div class="diente" id="diente30">35 <span>C</span></div>
+            <div class="diente" id="diente31">36 <span>1d</span></div>
+            <div class="diente" id="diente32">37 <span>2d</span></div>
+            <div class="diente" id="diente33">38 <span>3d</span></div>
+        </div>
+
+        <!--input type="submit" value="Guardar Consulta"-->
+        <br><button type="submit" onclick="guardarDatos()"id="btn">Guardar Odontograma Dental</button>
+    </form>
+</body>
+</html>

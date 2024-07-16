@@ -1,0 +1,45 @@
+body {
+    background-image: url('../../img/img4.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+h1, h2 {
+    text-align: center;
+    color: black;
+}
+
+/* Estilos CSS para el odontograma */
+.odontograma {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 5px;
+}
+.diente {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.diente span {
+    font-size: 12px;
+}
+/**********************************************/
+/* Estilos para los diferentes tipos de enfermedades */
+.rojo {
+    background-color: red;
+    color: white;
+}
+.azul {
+    background-color: blue;
+    color: white;
+}
+.negro {
+    background-color: black;
+    color: white;
+}

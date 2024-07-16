@@ -1,0 +1,65 @@
+body {
+    background-image: url('../img/img2.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: wheat;*/
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: wheat;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    float: right;
+}
+
+.form-group button:hover {
+    background-color: blueviolet;
+}

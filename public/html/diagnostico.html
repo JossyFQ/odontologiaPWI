@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/ICO.png"> <!--logo en la pestaña-->
+    <title>Diagnostico</title>
+    <link rel="stylesheet" href="../css/diagnostico.css">
+    <script src="../js/diagnostico.js"></script>
+    <style>
+        /* Estilos para la barra de navegación */
+        .navbar2 {
+            background-color: rgb(92, 75, 245);
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+        .navbar2 .barra2 {
+            float: left;
+            display: block;
+            text-align: center;
+            background-color: rgb(92, 75, 245);
+            padding: 10px 90px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid #000;
+        }
+        /* Estilo para resaltar el enlace activo */
+        .navbar2 .barra2:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="../navbar.html" width="100%" height="auto" frameborder="0"></iframe>
+    <!--div class="navbar2">
+        <a href="./datosPaciente.html" class="barra2">Datos del paciente</a>
+        <a href="./odontograma.html" class="barra2">Odontograma</a>
+        <a href="./indicadorSaludBucal.html" class="barra2">Indicadores de salud bucal</a>
+        <a href="./diagnostico.html" class="barra2">Diagnostico</a-->
+    </div>
+    <form id="datosPaciente" action=" " onsubmit="return validarFormulario()" method="get">
+        <h1>Registro Clínico</h1>
+        <h2>Diagnostico</h2>
+
+        <label for="id">Cedula ID del paciente:
+        <input type="number" class="id" id="id" name="id" required placeholder="Identificacion del paciente"></label>
+        <label for="pDiagnostico">Planes de diagnostico, terapeutico y educacional:</label>
+        <!--input type="text" id="pDiagnostico" name="pDiagnostico" class="pDiagnostico" required-->
+        <textarea id="pDiagnostico" name="pDiagnostico" class="pDiagnostico" rows="4" cols="50" required placeholder="Plan del diagnostico"></textarea>
+        <label for="diagnostico">Diagnostico:</label>
+        <!--input type="text" id="diagnostico" name="diagnostico" class="diagnostico" required-->
+        <textarea id="diagnostico" name="diagnostico" class="diagnostico" rows="4" cols="50" required placeholder="Diagnostico"></textarea>
+
+        <button type="submit" onclick="guardarDatos()">Guardar Diagnostico</button>
+    </form>
+</body>
+</html>

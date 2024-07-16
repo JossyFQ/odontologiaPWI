@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/ICO.png"> <!--logo en la pestaña-->
+    <title>Indicadores de salud bucal</title>
+    <link rel="stylesheet" href="../css/indicadorSaludBucal.css">
+    <script src="../js/indicadorSaludBucal.js"></script>
+    <style>
+        /* Estilos para la barra de navegación */
+        .navbar2 {
+            background-color: rgb(92, 75, 245);
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+        .navbar2 .barra2 {
+            float: left;
+            display: block;
+            text-align: center;
+            background-color: rgb(92, 75, 245);
+            padding: 10px 90px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid #000;
+        }
+        .navbar2 .barra2:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="../navbar.html" width="100%" height="auto" frameborder="0"></iframe>
+    <!--div class="navbar2">
+        <a href="./datosPaciente.html" class="barra2">Datos del paciente</a>
+        <a href="./odontograma.html" class="barra2">Odontograma</a>
+        <a href="./indicadorSaludBucal.html" class="barra2">Indicadores de salud bucal</a>
+        <a href="./diagnostico.html" class="barra2">Diagnostico</a-->
+    </div>
+    <form id="indicadorSaludBucal" action=" " onsubmit="return validarFormulario()" method="get">
+        <h1>Registro Clínico</h1>
+        <h2>Indicadores de salud bucal</h2>
+            <!----> 
+            <label for="id">Cedula ID del paciente:
+            <input type="number" class="id" id="id" name="id" required placeholder="Identificacion del paciente"></label>
+            <h4>Higiene oral:</h4>
+            <label for="placa">Placa:
+                <input type="number" id="placa" name="placa" required>
+            </label>
+            <label for="calculo">Calculo:
+                <input type="number" id="calculo" name="calculo" required>
+            </label>
+            <label for="gingivitis">Gingivitis:
+                <input type="number" id="gingivitis" name="gingivitis" required>
+            </label>
+
+            <h4>Enfermedad Periodontal:</h4>
+            <label for="periodontitisL"><input type="radio" id="periodontitisL" name="periodontitisL" class="Periodontal" onchange="limitarSeleccionPeriodontal(this)">
+            LEVE</label>
+            <label for="periodontitisM"><input type="radio" id="periodontitisM" name="periodontitisM" class="Periodontal" onchange="limitarSeleccionPeriodontal(this)">
+            MODERADA</label>
+            <label for="periodontitisA"><input type="radio" id="periodontitisA" name="periodontitisA" class="Periodontal" onchange="limitarSeleccionPeriodontal(this)">
+            SEVERA</label><br>
+
+            <h4>Mal oclusion:</h4>
+            <label for="angleI"><input type="radio" id="angleI" name="angleI" class="Oclusion" onchange="limitarSeleccionOclusion(this)">
+            ANGLE I</label>
+            <label for="angleII"><input type="radio" id="angleII" name="angleII" class="Oclusion" onchange="limitarSeleccionOclusion(this)">
+            ANGLE II</label>
+            <label for="angleIII"><input type="radio" id="angleIII" name="angleIII" class="Oclusion" onchange="limitarSeleccionOclusion(this)">
+            ANGLE III</label>
+
+            <h4>Flúorosis:</h4>
+            <label for="leve"><input type="radio" id="leve" name="leve" class="Fluor" onchange="limitarSeleccionFluor(this)">
+            LEVE</label>
+            <label for="moderada"><input type="radio" id="moderada" name="moderada" class="Fluor" onchange="limitarSeleccionFluor(this)">
+            MODERADA</label>
+            <label for="severa"><input type="radio" id="severa" name="severa" class="Fluor" onchange="limitarSeleccionFluor(this)">
+            SEVERA</label>
+
+            <h4>Índice de CPO-ceo:</h4>
+            <label for="c">Número de dientes afectados por caries (C):
+                <input type="number" id="c" name="c"></label>
+            <label for="p">Número de dientes perdidos debido a caries (P):
+                <input type="number" id="p" name="p"></label>
+            <label for="o">Número de dientes con restauraciones (O):
+                <input type="number" id="o" name="o"></label>
+        <!--input type="submit" value="Guardar Consulta"-->
+        <button type="submit" onclick="guardarDatos()">Guardar salud bucal</button>
+    </form>
+</body>
+</html>

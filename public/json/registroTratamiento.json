@@ -1,0 +1,53 @@
+[
+    {
+        "id": 111222333,
+        "nombre": "María García",
+        "procedimientos": "Extracción de muelas del juicio",
+        "diagnostico": "Carie avanzada en las muelas del juicio",
+        "profesional": "Dr. Juan Pérez",
+        "codigoTratamiento": "TRAT001",
+        "protocolo": "Aplicación de anestesia local antes del procedimiento.",
+        "fecha": "2024-07-15"
+        },
+        {
+        "id": 444555666,
+        "nombre": "Pedro Martínez",
+        "procedimientos": "Limpieza dental",
+        "diagnostico": "Placa y sarro acumulado en las piezas dentales",
+        "profesional": "Dra. María López",
+        "codigoTratamiento": "TRAT002",
+        "protocolo": "Uso de ultrasonido para remover el sarro dental.",
+        "fecha": "2024-07-16"
+        },
+        {
+        "id": 777888999,
+        "nombre": "Sofía Rodríguez",
+        "procedimientos": "Implante dental",
+        "diagnostico": "Pérdida de una pieza dental anterior",
+        "profesional": "Dr. Pedro Díaz",
+        "codigoTratamiento": "TRAT003",
+        "protocolo": "Injerto óseo previo a la colocación del implante.",
+        "fecha": "2024-07-17"
+        },
+        {
+        "id": 101112131,
+        "nombre": "Manuel López",
+        "procedimientos": "Endodoncia",
+        "diagnostico": "Infección en la raíz del diente",
+        "profesional": "Dr. Luis Martínez",
+        "codigoTratamiento": "TRAT004",
+        "protocolo": "Uso de microscopio dental para mayor precisión.",
+        "fecha": "2024-07-18"
+        },
+        {
+        "id": 141516171,
+        "nombre": "Ana Ramírez",
+        "procedimientos": "Blanqueamiento dental",
+        "diagnostico": "Manchas superficiales en los dientes frontales",
+        "profesional": "Dra. Ana María",
+        "codigoTratamiento": "TRAT005",
+        "protocolo": "Aplicación de gel blanqueador con luz LED.",
+        "fecha": "2024-07-19"
+    }
+]
+

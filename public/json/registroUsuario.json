@@ -1,0 +1,72 @@
+[
+    {
+        "id": 123456789,
+        "seconame": "Pérez García",
+        "name": "Juan Carlos",
+        "dia_de_birth": "1990-05-15",
+        "gender": "male",
+        "eCivil": "casado",
+        "ciudad": "Quito",
+        "direccion": "Av. Principal 123",
+        "telefono": 987654321,
+        "email": "juan.perez@hotmail.com",
+        "password": "password123",
+        "validarPassword": "password123"
+    },
+    {
+        "id": 987654321,
+        "seconame": "López Gómez",
+        "name": "María José",
+        "dia_de_birth": "1985-12-10",
+        "gender": "female",
+        "eCivil": "soltero",
+        "ciudad": "Guayaquil",
+        "direccion": "Calle Secundaria 456",
+        "telefono": 654321987,
+        "email": "maria.lopez@gmail.com",
+        "password": "maria123",
+        "validarPassword": "maria123"
+    },
+    {
+        "id": 456789123,
+        "seconame": "Martínez Torres",
+        "name": "Luis Fernando",
+        "dia_de_birth": "1988-08-25",
+        "gender": "male",
+        "eCivil": "soltero",
+        "ciudad": "Cuenca",
+        "direccion": "Av. Libertad 789",
+        "telefono": 123456789,
+        "email": "luis.martinez@outlook.com",
+        "password": "lucho88",
+        "validarPassword": "lucho88"
+    },
+    {
+        "id": 111222333,
+        "seconame": "Gómez Hernández",
+        "name": "Ana María",
+        "dia_de_birth": "1995-03-20",
+        "gender": "female",
+        "eCivil": "soltero",
+        "ciudad": "Manta",
+        "direccion": "Calle Principal 234",
+        "telefono": 333222111,
+        "email": "ana.gomez@example.com",
+        "password": "ana1995",
+        "validarPassword": "ana1995"
+    },
+    {
+        "id": 999888777,
+        "seconame": "Díaz Rodríguez",
+        "name": "Pedro José",
+        "dia_de_birth": "1980-07-03",
+        "gender": "male",
+        "eCivil": "casado",
+        "ciudad": "Loja",
+        "direccion": "Av. Comercial 567",
+        "telefono": 888777666,
+        "email": "pedro.diaz@yahoo.com",
+        "password": "pedro80",
+        "validarPassword": "pedro80"
+    }
+]

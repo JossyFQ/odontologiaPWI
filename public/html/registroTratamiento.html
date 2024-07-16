@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Tratamiento Dental</title>
+    <link rel="shortcut icon" href="../img/ICO.png">
+    <link rel="stylesheet" href="../css/registroTratamiento.css">
+    <script src="../js/registroTratamiento.js"></script>
+</head>
+<body>
+    <iframe src="../navbar.html" width="100%" height="auto" frameborder="0"></iframe>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Formulario de Tratamiento Dental</h1>
+        </div>
+        <form id="dentalForm" method="get" action="#">
+            <div class="form-group">
+                <label for="id">Cedula ID del paciente:</label>
+                <input type="number" class="id" id="id" name="id" required>
+                <label for="nombre">Nombre del Paciente:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="procedimientos">Procedimientos Necesarios:</label>
+                <textarea id="procedimientos" name="procedimientos" rows="4" required></textarea>
+                <label for="diagnostico">Diagnostico y/o complicaciones:</label>
+                <input type="text" id="diagnostico" name="diagnostico" required>
+                <label for="profesional">Nombre del Profesional:</label>
+                <input type="text" id="profesional" name="profesional" required>
+                <label for="codigoTratamiento">Codigo de tratamiento:</label>
+                <input type="text" id="codigoTratamiento" name="codigoTratamiento" required>
+                <label for="protocolo">Protocolo de Tratamiento:</label>
+                <textarea id="protocolo" name="protocolo" class="protocolo" rows="4" required></textarea>
+                <label for="fecha">Fecha de registro:</label>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+                <button type="submit" onclick='guardar()'>Guardar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
